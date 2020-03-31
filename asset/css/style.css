@@ -1,0 +1,33 @@
+@media(max-width:600px){
+    #title{
+        font-size: 10px;
+    }
+}
+body{
+    padding: 2%;
+}
+#title{
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+}
+#mainContainer{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.1em;
+    background-color: hsl(0, 0%, 95%);
+    padding: 5%;
+
+}
+input,select,textarea{
+    margin-bottom: 20px;
+}
+#title{
+    background-color: hsl(0, 0%, 90%);
+    border-block-end: 1px solid gray;
+    margin-bottom: 10px;
+
+}
+
+#mainContainer:hover{
+    border: 3px solid hsl(0, 0%, 50%);
+}

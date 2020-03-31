@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survery Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="title">
+            <h1>SURVEY FORM</h1>
+            <h2>Thank you for taking the time to complete the survey</h2>
+        </div>
+
+        <div id="mainContainer">
+            <form>
+                    <label for="name">Name:</label><br/>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required><br/>
+                    <label for="email">Email:</label><br/>
+                    <input type="text" id="email" name="email" placeholder="Enter your Email" required><br/>
+                    <label for="dob">Date of Birth(optional):</label><br/>
+                    <input type="date" id="dob" name="dob" placeholder="Enter your Age?"><br/>
+                    <label for="role">Which option best describe you current role?</label><br/>
+                    <select id="role" class="dropdown">
+                        <option value=""selected disabled hidden>Choose one</option>
+                        <option value="student">Student</option>
+                        <option value="fulltimejob">Full Time Job</option>
+                        <option value="fulltimelearner">Full Time Learner</option>
+                        <option value="prefernottosay">Prefer Not To Say</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <br />
+                    <label>Would you recommend to you friend?</label><br/>
+                    <input type="radio" id="radio1" name="recommend" value="definitely">
+                    <label for="radio1">Definitely</label><br />
+                    <input type="radio" id="radio2" name="recommend" value="maybe">
+                    <label for="radio2">Maybe</label><br />
+                    <input type="radio" id="radio3" name="recommend" value="notsure">
+                    <label for="radio3">Not sure</label><br />
+
+                    <label for="feature">What is your favourite feature?</label><br/>
+                    <select id="feature" class="dropdown">
+                        <option value=""selected disabled hidden>Choose one</option>
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="opensource">Opensource</option>
+                    </select>
+                    <br />
+                    <label>What would you like to see improved?(check all that apply)</label><br/>
+                    <input type="checkbox" id="improved1" name="improved" value="design">
+                    <label for="improved1">Design</label><br />
+                    <input type="checkbox" id="improved2" name="improved" value="challenges">
+                    <label for="improved2">Challenges</label><br />
+                    <input type="checkbox" id="improved3" name="improved" value="datavisualisation">
+                    <label for="improved3">Data Visualisation</label><br />
+                    
+                    <label for="comment">Any Commnets or suggestions?</label><br/>
+                    <textarea id="comment" rows="5" cols="20" value=""></textarea>
+                    <br />
+                    <input id="submit" type="submit" value="Submit">
+            </form>
+        </div>
+        <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+        <script src="asset/js/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="asset/css/style.css">
+    </body>
+</html>
